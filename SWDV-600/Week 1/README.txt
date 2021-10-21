@@ -1,1 +1,0 @@
-This is a collection of introductory Python assignments and practice problems
