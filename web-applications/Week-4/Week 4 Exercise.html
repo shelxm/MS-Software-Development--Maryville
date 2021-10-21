@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Sheldon's Week 4 Assignment</title>
+    <script type="text/javascript">
+    function getDates() {
+        var today=new Date();
+        var tomorrow=new Date();
+        tomorrow.setDate(today.getDate()+1);
+        document.write("Today is " + today+ " and tomorrow is " + tomorrow);
+    }</script>
+</head>
+<body>
+    <script type="text/javascript">
+    {var username=prompt("Please enter a username: ");
+    var password=prompt("Please enter a password: ")};</script>
+    <h2>
+        Below are examples of different objects in Javascript
+    </h2>
+    <h4>
+        String objects
+    </h4>
+    <script type="text/javascript">
+    var firstName="Sheldon ";
+    var lastName="Mattson";
+    var fullName=firstName.concat(lastName);
+    document.write(fullName.toUpperCase());</script>
+    <h4>
+        Date objects
+    </h4>
+    <script type="text/javascript">
+    var todaysDate=new Date();
+    document.write("The date is " + todaysDate);</script>
+    <h4>
+        Boolean objects
+    </h4>
+    <script type="text/javascript">
+    var a=10;
+    var b= 27;
+    document.write("Is 10 greater than 27? " + Boolean(10>27).toString() + ".<br>");
+    document.write("Is 27 greater than 10? " + Boolean(27>10).toString() + ".<br>");</script>
+    <h4>
+        Math objects
+    </h4>
+    <script type="text/javascript">
+    var diameter=Math.random()*100;
+    var circumference=diameter*Math.PI;
+    document.write("The absolute circumference of a circle with a diameter of " + diameter + " inches is "+ Math.abs(circumference)+ " inches.") </script>
+    <br>
+    <br>
+    <h4>This is an example of an onclick event</h4>
+    <input type="button" value="Today and tomorrow's dates- current time" onclick="getDates()"/>
+</body>
+</html>
