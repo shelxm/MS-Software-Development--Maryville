@@ -1,0 +1,109 @@
+body {
+  font-family: "Anonymous Pro", monospace;
+  color: black;
+}
+
+.navbar-brand {
+  font-family: "Geo", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+#text-color {
+  color: #faf0e6;
+  background-color: #312420;
+}
+
+button {
+  background-color: #d6811f;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+.inputLabel {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input.inputField {
+  padding: 5px;
+  border: 1px solid #d6811f;
+}
+
+div.box {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+#primary1 {
+  background-color: #faf0e6;
+}
+
+#primary2 {
+  background-color: #d6811f;
+}
+
+#primary3 {
+  background-color: #05648a;
+}
+
+#primary4 {
+  background-color: #312420;
+}
+
+#primary5 {
+  background-color: #271124;
+}
+
+.warning {
+  background-color: yellow;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.danger {
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: green;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+svg.svg-inline--fa {
+  color: white;
+}
+
+.spacer {
+  margin-top: 25px;
+}
+
+#footer {
+  border-top: 1px solid #dddddd;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+}
