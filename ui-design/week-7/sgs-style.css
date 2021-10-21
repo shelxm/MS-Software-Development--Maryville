@@ -1,0 +1,70 @@
+/*Color Variables*/
+/*Font variables*/
+/*Media screen*/
+@media screen and (max-width: 768px) {
+  #content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .boardgame-pieces {
+    width: 100%;
+  }
+}
+/*Mixin*/
+.bordered {
+  border-radius: 8px;
+  border: 2px solid black;
+}
+/*Styling*/
+.navbar-custom {
+  background-color: #271124;
+  font-family: "Geo", sans-serif;
+}
+.navbar-custom .navbar-brand {
+  font-family: "Cinzel", serif;
+}
+body {
+  background-color: #05648a;
+  font-family: "Anonymous Pro", monospace;
+  font-weight: bold;
+  color: #faf0e6;
+}
+body h1 {
+  text-align: center;
+}
+body h3 {
+  text-decoration: underline;
+}
+body .content {
+  background-color: #312420;
+}
+body .content a {
+  color: #d6811f;
+}
+body .boardgame-pieces .column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+body .boardgame-pieces .row::after {
+  content: "";
+  clear: both;
+  display: inline-block;
+}
+body .boardgame-pieces img {
+  border-radius: 8px;
+  border: 2px solid black;
+}
+body .self-image {
+  border-radius: 8px;
+  border: 2px solid black;
+  width: 70%;
+  height: auto;
+}
+body button {
+  background-color: #d6811f;
+  border-radius: 8px;
+  border: 2px solid black;
+  color: #faf0e6;
+}
