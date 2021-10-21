@@ -1,0 +1,86 @@
+/*Color Variables*/
+@shelf-color: #312420;
+@back-color: #05648a;
+@font-color: #faf0e6;
+@link-color: #d6811f;
+@nav-color: #271124;
+@warning-color: yellow;
+@danger-color: red;
+@success-color: green;
+
+/*Font variables*/
+@main-font: "Anonymous Pro", monospace;
+@nav-font: "Geo", sans-serif;
+@brand-font: "Cinzel", serif;
+
+/*Media screen*/
+@media screen and (max-width: 768px) {
+  #content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .boardgame-pieces {
+    width: 100%;
+  }
+}
+
+/*Mixin*/
+.bordered {
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+/*Styling*/
+.navbar-custom {
+  background-color: @nav-color;
+  font-family: @nav-font;
+  .navbar-brand {
+    font-family: "Cinzel", serif;
+  }
+}
+
+body {
+  background-color: @back-color;
+  font-family: @main-font;
+  font-weight: bold;
+  color: @font-color;
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    text-decoration: underline;
+  }
+  .content {
+    background-color: @shelf-color;
+    a {
+      color: #d6811f;
+    }
+  }
+  .boardgame-pieces {
+    .column {
+      float: left;
+      width: 25%;
+      padding: 5px;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: inline-block;
+    }
+    img {
+      .bordered();
+    }
+  }
+  .self-image {
+    .bordered();
+    width: 70%;
+    height: auto;
+  }
+  button {
+    background-color: #d6811f;
+    .bordered();
+    color: @font-color;
+  }
+}
