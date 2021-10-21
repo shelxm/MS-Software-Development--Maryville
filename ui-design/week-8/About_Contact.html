@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>About/Contact | Sheldon's Game Shelf</Title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Styling sheet link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sgs-style.css">
+
+    <!--Special font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+     <!--Mustache.JS CDN-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+     <!--JQuery CDN-->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="Welcome.html" class="navbar-brand" id="title">Sheldon's Game Shelf</a>
+
+            <button class="navbar-toggler" type="button" role="menu" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="Welcome.html" class="nav-link">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Reviews_List.html" class="nav-link">Game Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Upcoming_List.html" class="nav-link">Upcoming Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About_Contact.html" class="nav-link">About/Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="page-title">About/Contact</h1>
+    <div class="container content">
+        <div class="row g-0">
+            <div class="col-md-8 col-sm-12 align-self-center">
+                <h3>About Sheldon's Game Shelf</h3>
+                <p>This site is a personal project for my Master's in Software Development program. I decided to use part of my board game collection and make my own review site including information such as the publisher, player count, recommended ages, and a link to the respective BGG page. There is also a list of upcoming games I am excited about with information including publisher, player count, recommended ages, estimated retail dates, and relevant links.</p>
+                <br>
+                <br>
+                <h3>About Me</h3>
+                <p>Hello, my name is Sheldon Mattson. I am 28 years old and have been playing board games for the past few years, mostly with my girlfriend of 11 years Emily. We have a dog named Boomer and currently live in Iowa where we both work at the Iowa State University Veterinary Diagnostic Lab. I graduated from Iowa State University with a Bachelor's in Animal Science but decided I needed a change so I am currently pursuing a Masters in Software Development from <a href="https://www.maryville.edu/">Maryville University</a>.</p>
+                <p>My favorite movie of all time is Jurassic Park and my favorite book is <a href="https://www.penguinrandomhouse.com/books/290255/taggerung-by-brian-jacques-illustrated-by-gary-chalk/">Taggerung</a> by Brian Jaques. I am a fan of Lord of the Rings, Harry Potter, and all things Disney. I enjoy playing Magic the Gathering and Dungeons and Dragons with Emily and friends in my free time and spending time with Boomer. </p>
+            </div>
+            <div class="col-md-4 col-sm-12" role="img">
+                <img class="img-fluid self-image" src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.6435-9/186561576_10159540532539940_7940430414860151805_n.jpg?_nc_cat=110&ccb=1-4&_nc_sid=8bfeb9&_nc_ohc=-2JG0KM7PLIAX871uN8&_nc_ht=scontent-ort2-2.xx&oh=8f79c33a21627e6bc0455f4abe6d20e2&oe=61374660">
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 col-md-12">
+                <h3>Contact</h3>
+                <p>To contact me, please press the button below or email me at: <a href="mailto:smattson1@live.maryville.edu">smattson1@live.maryville.edu</a><br><br>I will respond as soon as I can.</p>
+            </div>
+        </div>
+        <div class="button">
+            <button type="button" onclick="alert('This button does not currently work. Sorry for any inconvenience.')">Contact</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-8 col-sm-12">
+                <p>&#169 SGS- Sheldon's Game Shelf by Sheldon Mattson</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="time">
+                    <p><span id="datetime"></span></p>
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

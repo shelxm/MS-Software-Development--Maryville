@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>Direwild | Sheldon's Game Shelf</Title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Styling sheet link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sgs-style.css">
+
+    <!--Special font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+     <!--Mustache.JS CDN-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+     <!--JQuery CDN-->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+
+     <!--JavaScript-->
+    <script type="text/javascript" src="SGS.js"></script>
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="Welcome.html" class="navbar-brand" id="title">Sheldon's Game Shelf</a>
+
+            <button class="navbar-toggler" type="button" role="menu" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="Welcome.html" class="nav-link">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Reviews_List.html" class="nav-link">Game Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Upcoming_List.html" class="nav-link">Upcoming Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About_Contact.html" class="nav-link">About/Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="page-title"></h1>
+    <div class="container content">
+        <div class="col-md-10 col-sm-12">
+            <h2>Direwild</h2>
+            <p>Direwild has awesome artwork and the creatures have great names with witty flavor text. Part of the fun is "combining" all of the creatures you played each turn into one and reading the overall creature "description". It is a unique combination of deck-building and dungeon crawling and I bought the kickstarter edition with cool miniatures. Unfortunately this game takes a long time to set up, uses plenty of table space, and has some balance issues. We love playing it and some friends are always asking to to play it but the time and space constraints are sometimes the deciding factor. We also tend to have 5-6 people over to play at which point it is not an option. Another ding against it is support seems to be dead. There was supposed to be an expansion but a year or so after release the creator went silent, with no news since.<br></p>
+            <p>Fun game if you have the space, time, and are willing to put up with any issues or use house rules.</p>
+            </p>
+            <ul>
+                <li>Publisher: Iron Horde Games</li>
+                <li>Player Count: 2-4 players</li>
+                <li>Ages: 13+</li>
+                <li>BGG link: <a href="https://boardgamegeek.com/boardgame/218376/direwild">Direwild</a></li>
+            </ul>
+            <img class="img-fluid" id="Direwild-image" src="https://cf.geekdo-images.com/GOFBGSDLvlZFtO0wIaUZaw__imagepage/img/VtTyhRikUJ1dYvE-O63SUjZ770U=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3661152.jpg" alt="Box art cover for Direwild.">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-8 col-sm-12">
+                <p>&#169 SGS- Sheldon's Game Shelf by Sheldon Mattson</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="time">
+                    <p><span id="datetime"></span></p>
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

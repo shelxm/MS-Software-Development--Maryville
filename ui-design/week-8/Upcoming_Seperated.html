@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>Upcoming Games | Sheldon's Game Shelf</Title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Styling sheet link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sgs-style.css">
+
+    <!--Special font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+     <!--Mustache.JS CDN-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+     <!--JQuery CDN-->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="Welcome.html" class="navbar-brand" id="title">Sheldon's Game Shelf</a>
+
+            <button class="navbar-toggler" type="button" role="menu" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="Welcome.html" class="nav-link">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Reviews_List.html" class="nav-link">Game Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Upcoming_Seperated.html" class="nav-link">Upcoming Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About_Contact.html" class="nav-link">About/Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="page-title">Upcoming Games</h1>
+    <p class="disclaimer">Disclaimer: Due to COVID a lot of game production and shipping is in flux</p>
+    <div class="container content upcoming">
+        <div class="col-md-10 col-sm-12">
+            <h2>Jurassic World Miniature Game</h2>
+            <p>Jurassic Park is my favorite movie of all time so anything related to the IP is a must, add in some awesome looking miniatures and it was a no brainer to "spare no expense". To be honest I have no clue how gameplay will be, I ourely bought it for the aforementioned reasons. Unfortunately this game is in flux more than most. Just recently an update explained the reasons included some reorganization at the game company and most importantly changes with Universal requiring game changes and embargos. The reasons for this are restrucutring due to COVID and the upcoming Jurassic World movie so some changes to algin with it. Expected to ship in 2-3 waves starting later this year or beginning of next.</p>
+            <ul>
+                <li>Publisher: Exod Games</li>
+                <li>Player Count: 2 to X players</li>
+                <li>Ages: 14+</li>
+                <li>Retail Release: TBD</li>
+                <li>Kickstarter Link: <a href="https://www.kickstarter.com/projects/jurassicworld/jurassic-worldtm-miniature-game/description">Jurassic World Miniature Game</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-8">
+            <img class="img-fluid" id="JP-image" src="https://ksr-ugc.imgix.net/assets/025/525/003/6bf8a4459bc62f63ea1cedf1d10b6f7a_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1560860284&auto=format&frame=1&q=92&s=ec052faaf810c8cccb20438e1b95443f" alt="Jurassic Park the Miniature Game box next to a Tyrannosaurus Rex roaring">
+        </div>
+    </div>
+    <div class="container content upcoming">
+        <div class="col-md-10 col-sm-12">
+            <h2>Oathsworn: Into the Deepwood</h2>
+            <p>Oathsworn is a co-operative dark fantasy campaign board game. There is tons of content, awesome looking miniatures, and it sounds like it will be an epic game. Demand is high with a waitlist as it is Kickstart exclusive, beyond stores that purchased from the kickstarter, with many people asking on Facebook how to get in on it. My only worry is time and space constraints as to how often I will be able to play. Aside from the waitlist it is available to preorder from <a href="https://tgg-games.com/products/oathsworn">The Gaming Goat</a>. I think it is still slated for shipping around November.</p>
+            <ul>
+                <li>Publisher: Shadowborne Games</li>
+                <li>Player Count: 1-4</li>
+                <li>Ages: 14+</li>
+                <li>Retail release: N/A Kickstarter Exclusive</li>
+                <li>Kickstarter Link: <a href="https://www.kickstarter.com/projects/shadowborne-games/oathsworn-into-the-deepwood/description">Oathsworn</a></li>
+            </ul>
+            <img class="img-fuid" id= "Oath-image" src="https://images.beastsofwar.com/2019/05/Oathsworn-1024x615.png" alt="Rats led by a giant rat attack an adventuring party">
+        </div>
+    </div>
+    <div class="container content upcoming">
+        <div class="col-md-10 col-sm-12">
+            <h2>Dinosaur World</h2>
+            <p>Dinosaur World looks like Jurassic Park in board game form, which is my favorite IP. Build your own park, roll dice to determine any casualties from jeep tours, and managing your dinosaurs. What else can I say? Super excited for this game, especially as its predecessor Dinosaur Island was highly rated online. Supposed to start shipping around September.</p>
+            <ul>
+                <li>Publisher: Pandasaurus</li>
+                <li>Player count: 1-4 players</li>
+                <li>Ages: 10+</li>
+                <li>Retail Release: Summer/Fall 2021</li>
+                <li>Kickstarter Link: <a href="https://www.kickstarter.com/projects/pandasaurus/dinosaur-world-and-dinosaur-island-rawr-n-write">Dinosaur World</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-8">
+            <img class="img-fluid" id="Dino-image" src="https://thefandomentals.com/wp-content/uploads/2021/01/dino.png">
+        </div>
+    </div>
+    <div class="container content upcoming">
+        <div class="col-md-10 col-sm-12">
+            <h2>Transformers Deck-Building Game</h2>
+            <p>Deck-building games are a favorite of mine, especially when it implements some of my favorite IPs well. As such, I am excited about this game from both the Transformers IP and the style of game. No information yet besides its announcement so I will hold judgement until I see how it works but it comes from Renegade Game Studios who have a solid history of games including Clank!.</p>
+            <ul>
+                <li>Publisher: Renegade Game Studios</li>
+                <li>Player Count: 1-5 players</li>
+                <li>Ages: 13+</li>
+                <li>Retail Release: September 2021</li>
+                <li>Retail Link: <a href="https://www.miniaturemarket.com/rgs02236.html">Transformers Deck-Building Game</a></li>
+            </ul>
+            <img class="img-fluid" id="Transformers-image" src="https://media.miniaturemarket.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/g/rgs02236.jpg">
+        </div>
+    </div>
+    <div class="container content upcoming">
+        <div class="col-md-10 col-sm-12">
+            <h2>Ascension: Curse of the Golden Isles</h2>
+            <p>Curse of the Golden Isles is the latest Ascension expansion, all of which can be standalone or combined with others. They all follow the same basic principles with new mechanics and cards introduced into each one which provides a refreshing variety. We have Skulls and Sails so having the two expansions combine well (thematically and mechanically) sounds awesome. Ascension always has great artwork and is tons of fun.</p>
+            <ul>
+                <li>Stoneblade Entertainment</li>
+                <li>Player count: 2 to 4 players (2-6 with Ascension: Skulls and Sails)</li>
+                <li>Ages: 13+</li>
+                <li>Retail Release: July 2021</li>
+                <li>Retail Link: <a href="https://www.miniaturemarket.com/sbe10175.html">Ascension: Curse of the Golden Isles</a></li>
+            </ul>
+            <img class="img-fluid" id="Ascension-image" src="https://media.miniaturemarket.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/b/sbe10175.jpg" alt="Ghost pirate">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-8 col-sm-12">
+                <p>&#169 SGS- Sheldon's Game Shelf by Sheldon Mattson</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="time">
+                    <p><span id="datetime"></span></p>
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

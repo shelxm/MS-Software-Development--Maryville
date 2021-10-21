@@ -1,0 +1,76 @@
+/*Compiles on Save*/
+/*Color Variables*/
+/*Font variables*/
+/*Media screen*/
+@media screen and (max-width: 768px) {
+  #content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .boardgame-pieces {
+    width: 100%;
+  }
+}
+/*Mixin*/
+.bordered {
+  border-radius: 8px;
+  border: 2px solid black;
+}
+/*Styling*/
+.navbar-custom {
+  background-color: #271124;
+  font-family: "Geo", sans-serif;
+}
+.navbar-custom .navbar-brand {
+  font-family: "Cinzel", serif;
+}
+body {
+  background-color: #05648a;
+  font-family: "Anonymous Pro", monospace;
+  font-weight: bold;
+  color: #faf0e6;
+}
+body h1 {
+  text-align: center;
+}
+body img {
+  border-radius: 8px;
+  border: 2px solid black;
+  max-width: 100%;
+  height: auto;
+}
+body .content {
+  background-color: #312420;
+  border-style: solid;
+  border-color: #271a16;
+  border-width: 10px;
+}
+body .content a {
+  color: #d6811f;
+}
+body .boardgame-pieces .column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+body .boardgame-pieces .row::after {
+  content: "";
+  clear: both;
+  display: inline-block;
+}
+body .disclaimer {
+  text-align: center;
+}
+body .self-image {
+  border-radius: 8px;
+  border: 2px solid black;
+  width: 70%;
+  height: auto;
+}
+body button {
+  background-color: #d6811f;
+  border-radius: 8px;
+  border: 2px solid black;
+  color: #faf0e6;
+}

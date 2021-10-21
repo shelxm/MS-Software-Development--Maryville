@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>Disney Villainous | Sheldon's Game Shelf</Title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Styling sheet link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sgs-style.css">
+
+    <!--Special font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+     <!--Mustache.JS CDN-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+     <!--JQuery CDN-->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+
+     <!--JavaScript-->
+    <script type="text/javascript" src="SGS.js"></script>
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="Welcome.html" class="navbar-brand" id="title">Sheldon's Game Shelf</a>
+
+            <button class="navbar-toggler" type="button" role="menu" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="Welcome.html" class="nav-link">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Reviews_List.html" class="nav-link">Game Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Upcoming_List.html" class="nav-link">Upcoming Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About_Contact.html" class="nav-link">About/Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="page-title"></h1>
+    <div class="container content">
+        <div class="col-md-10 col-sm-12">
+            <h2>Disney Villainous</h2>
+            <p>Villainous is a play group and personal favorite. The different character goals, boards, and decks are thematically on point and the game receives frequent support in expansions. There are about 15 total villains that can be played and the game has expanded into a Marvel version with its own first expansion coming out. Some characters are a little more balanced than others, but the game allows for strategically discarding over and over to help make up for any issues. While the game does recommend 2-6 players it does work with more, albeit much slower games that can showcase any balance issues. It is always fun to be Prince John and play "beautiful lovely taxes" or play Hercules to Hades board.<br></p>
+            <p>A fun game with a little bit of strategy and heavy on theme. Recommend for any disney lovers.</p>
+            <ul>
+                <li>Publisher: Ravensburger</li>
+                <li>Player Count: 2-6 players</li>
+                <li>Ages: 10+</li>
+                <li>BGG link: <a href="https://boardgamegeek.com/boardgame/256382/disney-villainous">Disney Villainous</a></li>
+            </ul>
+            <img class="img-fluid" id="Villain-image" src="https://cf.geekdo-images.com/7Ej5V5Dq92QdvVFvISfl_A__imagepage/img/fO_sFtYg4_0VYaC9Q-pWamXQM2c=/fit-in/900x600/filters:no_upscale():strip_icc()/pic4216110.jpg" alt="Villainous box art of Maleficent".>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-8 col-sm-12">
+                <p>&#169 SGS- Sheldon's Game Shelf by Sheldon Mattson</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="time">
+                    <p><span id="datetime"></span></p>
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

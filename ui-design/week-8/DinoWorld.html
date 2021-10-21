@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>Dinosaur World | Sheldon's Game Shelf</Title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Styling sheet link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sgs-style.css">
+
+    <!--Special font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+     <!--Mustache.JS CDN-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+     <!--JQuery CDN-->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+
+     <!--JavaScript-->
+    <script type="text/javascript" src="SGS.js"></script>
+
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="Welcome.html" class="navbar-brand" id="title">Sheldon's Game Shelf</a>
+
+            <button class="navbar-toggler" type="button" role="menu" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="Welcome.html" class="nav-link">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Reviews_List.html" class="nav-link">Game Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Upcoming_List.html" class="nav-link">Upcoming Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About_Contact.html" class="nav-link">About/Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="page-title"></h1>
+    <div class="container content">
+        <div class="col-md-10 col-sm-12">
+            <h2>Dinosaur World</h2>
+            <p>Dinosaur World looks like Jurassic Park in board game form, which is my favorite IP. Build your own park, roll dice to determine any casualties from jeep tours, and managing your dinosaurs. What else can I say? Super excited for this game, especially as its predecessor Dinosaur Island was highly rated online. Supposed to start shipping around September.</p>
+            <ul>
+                <li>Publisher: Pandasaurus</li>
+                <li>Player count: 1-4 players</li>
+                <li>Ages: 10+</li>
+                <li>Retail Release: Summer/Fall 2021</li>
+                <li>Kickstarter Link: <a href="https://www.kickstarter.com/projects/pandasaurus/dinosaur-world-and-dinosaur-island-rawr-n-write">Dinosaur World</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-sm-8">
+            <img class="img-fluid" id="Dino-image" src="https://thefandomentals.com/wp-content/uploads/2021/01/dino.png">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-8 col-sm-12">
+                <p>&#169 SGS- Sheldon's Game Shelf by Sheldon Mattson</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="time">
+                    <p><span id="datetime"></span></p>
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
