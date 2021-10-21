@@ -1,0 +1,177 @@
+/*Page background styling*/
+
+@media screen and (max-width: 768px) {
+  #content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #boardgame-pieces {
+    width: 100%;
+  }
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: inline-block;
+}
+
+body {
+  background-color: #05648a;
+  font-family: "Anonymous Pro", monospace;
+  font-weight: bold;
+}
+
+header {
+  font-family: "Geo", sans-serif;
+  font-size: 40px;
+}
+
+/* Change the size and other attributes of the Welcome message*/
+
+h1 {
+  color: #faf0e6;
+  text-align: center;
+}
+#welcome-image {
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+p {
+  margin-right: 220px;
+}
+
+#content {
+  background-color: #312420;
+  color: #faf0e6;
+  border-width: thick;
+}
+
+/*Add a border around the div tags with class "games" and adjust margins, padding, and color*/
+.games {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 240px;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #577a97;
+}
+
+/*Underline the names of games*/
+.games h3 {
+  text-decoration: underline;
+}
+
+a {
+  color: #d6811f;
+}
+
+/*Move the contact information to the bottom of the page*/
+.contact {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.time {
+  float: right;
+}
+/*Resize and style images*/
+#Abyss-image {
+  border-radius: 5px;
+  width: 400px;
+  height: 247px;
+  float: inline-end;
+}
+
+#Ashes-image {
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+#Betrayal-image {
+  border-radius: 5px;
+  width: 298px;
+  height: 300px;
+}
+
+#Direwild-image {
+  border-radius: 5px;
+  width: 289px;
+  height: 300px;
+}
+
+#Villain-image {
+  border-radius: 5px;
+  width: 298px;
+  height: 300px;
+}
+
+#Sorcerer-image {
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+#Trial-image {
+  border-radius: 5px;
+  width: 450px;
+  height: 205px;
+}
+
+#UU-image {
+  border-radius: 5px;
+  width: 375px;
+  height: 274px;
+}
+#self-image {
+  border-radius: 8px;
+  width: 338px;
+  height: 672px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 220px;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+
+#JP-image {
+  border-radius: 5px;
+  width: 512px;
+  height: 288px;
+}
+
+#Oath-image {
+  border-radius: 5px;
+  width: 512px;
+  height: 307px;
+}
+
+#Dino-image {
+  border-radius: 5px;
+  width: 273px;
+  height: 316px;
+}
+
+#Transformers-image {
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+}
+
+#Ascension-image {
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+}
